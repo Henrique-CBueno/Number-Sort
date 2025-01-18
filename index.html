@@ -43,10 +43,71 @@
         </div>
 
         <div class="program">
+            <div class="text">
+                <h2>QUERO SORTEAR:</h2>
+                <p>defina o intervalo e a quantidade de números, clique em "Sortear" <br> e veja os resultados na tela. É rápido e fácil!</p>
+            </div>
 
+            <div class="range">
+
+                <div class="inp">
+                    <label for="numbers"><p>números</p></label>
+                    <input type="number" name="numbers" id="numbers" min="1" max="20" step="1">
+                </div>
+
+                <div class="inp">
+                    <label for="range1"><p>de</p></label>
+                    <input type="number" name="range1" id="range1" min="1" max="100" step="1">
+                </div>
+
+                <div class="inp">
+                    <label for="range2"><p>a</p></label>
+                    <input type="number" name="range2" id="range2" min="1" max="100" step="1">
+                </div>
+
+            </div>
+
+            <div class="toogle">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <h2>Não repetir número</h2>
+            </div>
+
+            <button class="glow-on-hover" type="button">
+                <p>Sortear</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0001 11.9998H4.00012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
         </div>
-    </section>
 
+    </section>
+    
+    <div class="result">
+        <!-- <div class="numbers">
+            <div class="numb">
+                <h1>23</h1>
+            </div>
+        </div>
+        <div class="numbers">
+            <div class="numb">
+                <h1>23</h1>
+            </div>
+        </div>
+        <div class="numbers">
+            <div class="numb">
+                <h1>23</h1>
+            </div>
+        </div>
+        <div class="numbers">
+            <div class="numb">
+                <h1>23</h1>
+            </div>
+        </div> -->
+    </div>
 
 
     <script src="script.js"></script>

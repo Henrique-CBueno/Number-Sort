@@ -45,5 +45,52 @@
 
 body{
     background-color: var(--background-primary);
+
+    section.principal.delete {
+        display: none;
+    }
     
+}
+
+
+@keyframes appear{
+    from{
+        
+        transform: rotate(0deg) scale(0);
+    }
+   
+    to {
+        transform: rotate(1080deg) scale(1);
+    }
+    
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para novas linhas */
+    justify-content: center; /* Alinha os itens no centro */
+    gap: 1rem; /* Espaçamento entre os itens */
+
+    .numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .numb {
+            animation: appear 5s ease both;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 1rem;
+            background-color: var(--background-secondary);
+
+            h1 {
+                font: var(--overline);
+                font-size: 48px;
+                color: var(--content-brand);
+            }
+        }
+    }
 }
